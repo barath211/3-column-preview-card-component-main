@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    /* font-family: 'Big Shoulders Display', cursive; */
+font-family: 'Lexend Deca', sans-serif;
+width: 100vw;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: var(--clr--Very-light-gray-background-headings-buttons);
+}
+
+html{
+    font-size: 15px;
+}
+
+:root{
+--clr--Bright-orange: hsl(31, 77%, 52%);
+--clr--Dark-cyan: hsl(184, 100%, 22%);
+--clr--Very-dark-cyan: hsl(179, 100%, 13%);
+--clr--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--clr--Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+}
+
+.box{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ padding-left: 2rem;
+ padding-right: 2rem;
+ /* gap: 1.5rem; */
+}
+
+.card-one{
+    background-color: var(--clr--Bright-orange);
+    padding: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-one{
+    color: var(--clr--Bright-orange);
+}
+.img-container{
+    margin: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.tittle{
+font-size: 1.5rem;
+color: var(--clr--Very-light-gray-background-headings-buttons);
+text-transform: uppercase;
+margin-bottom: 1rem;
+}
+
+.card-description{
+    color: var(--clr--Very-light-gray-background-headings-buttons);
+    font-size: 15px ;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button{
+ width: 10rem;
+ height: 3rem;
+ border: 1px solid white;
+ border-radius: 15px;
+ font-size: 15px;
+margin-top: 1rem;
+background-color: var(--clr--Very-light-gray-background-headings-buttons);
+}
+
+.card-two{
+    background-color: var(--clr--Dark-cyan);
+    padding: 2rem;
+}
+
+.btn-two{
+    color: var(--clr--Dark-cyan);
+}
+
+.card-three{
+    background-color: var(--clr--Very-dark-cyan);
+    padding: 2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btn-three{
+    color: var(--clr--Very-dark-cyan);
+}
+
+@media screen and (min-width:991px) {
+    .box{
+        width: 60rem;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3rem;
+    }
+
+    .card-one{
+        border-top-right-radius: 0px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card-three{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-description{
+        margin-bottom: 4rem;
+    }
+
+
+
+
+
+
+
+}
